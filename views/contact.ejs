@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("partials/head.ejs") %>
+        <title>Minute Coffee - Staff Login</title>
+    </head>
+    <body>
+        <main>
+            <%- include("partials/header.ejs") %>
+            <%- include("partials/nav.ejs") %>
+            <section>
+                <form
+                    action="/staff_login"
+                    method="post"
+                    class="form-grid responsive-half margin-auto"
+                >
+                    <label for="firstname">First name:</label>
+                    <input type="text" name="first-name" id="first_name" />
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="last-name" id="last_name" />
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" id="email" required/>
+                    <label for="phone">Phone:</label>
+                    <input type="phone" name="phone" id="phone" required/>
+                    <label for="message">Messege:</label>
+                    <input type="subject" name="subject" id="subject" required/>
+                    <input type="submit" value="submit" />
+                </form>
+            </section>
+            <%- include("partials/footer.ejs") %>
+        </main>
+    </body>
+</html>

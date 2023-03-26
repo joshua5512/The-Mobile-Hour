@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head.ejs") %>
+    
+    <title>The Mobile Hour - Phones</title>
+  </head>
+  <body>
+    <main>
+      <%- include("partials/header.ejs") %>
+      <%- include("partials/nav.ejs") %>
+   
+      <section class="half-half-layout">
+        
+          <article class="mobile-card">
+            <img src="<%- feature.product_path %>" alt="Phone image" class="image"/>
+          
+            <%- feature.product_name %>
+            <a href="/" class="link-button">Back</a>
+            
+          </article>
+
+        <artile class="mobile-card">
+         
+
+         
+          <table>
+            
+
+            <tr>
+              <th>weight_grams: </th>
+              <th><%- feature.feature_weight_grams   %></th>
+            </tr>
+
+            <tr>
+              <th>height_mm: </th>
+              <th><%- feature.feature_id %></th>
+            </tr>
+
+            <tr>
+              <th>width_mm: </th>
+              <th><%- feature.feature_width_mm %></th>
+            </tr>
+            <tr>
+              <th>depth_mm: </th>
+              <th><%- feature.feature_depth_mm %></th>
+            </tr>
+            <tr>
+              <th>operating_system: </th>
+              <th><%- feature.feature_operating_system %></th>
+            </tr>
+            <tr>
+              <th>screen_size: </th>
+              <th><%- feature.feature_screen_size %></th>
+            </tr>
+            <tr>
+              <th>screen_resolution: </th>
+              <th><%- feature.feature_screen_resolution %></th>
+            </tr>
+            <tr>
+              <th>cpu: </th>
+              <th><%- feature.feature_cpu %></th>
+            </tr>
+            <tr>
+              <th>ram: </th>
+              <th><%- feature.feature_ram %></th>
+            </tr>
+            <tr>
+              <th>storage: </th>
+              <th><%- feature.feature_storage %></th>
+            </tr>
+            <tr>
+              <th>battery: </th>
+              <th><%- feature.feature_battery %></th>
+            </tr>
+            <tr>
+              <th>rear_camera: </th>
+              <th><%- feature.feature_rear_camera %></th>
+            </tr>
+            <tr>
+              <th>front_camera: </th>
+              <th><%- feature.feature_front_camera %></th>
+            </tr>
+
+          </table>
+          
+        </artile>
+        
+
+
+
+      </section>
+
+      <%- include("partials/footer.ejs") %>
+    </main>
+  </body>
+
+</html>

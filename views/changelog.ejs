@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("partials/head.ejs") %>
+        <title>Minute Coffee - Changelog</title>
+    </head>
+    <body>
+        <main>
+            <%- include("partials/header.ejs") %> <%- include("partials/nav.ejs") %> <%-
+            include("partials/admin_nav.ejs", {role: role}) %>
+            <section class="">
+            
+                <section class="cols-3 data-list">
+                    <span 
+                    <span class="data-list-heading">Changelog date/time</span>
+                    <span class="data-list-heading">Changelog Description</span>
+                    <span class="data-list-heading">User</span>
+                    <span 
+                    <% for (let log of changelog) { %>
+
+                        <span><%= log.changelog_change_date.toLocaleString() %></span>
+              
+                    <span><%= log.changelog_change_description %></span>
+
+                    <span><%= log.user_username %></span>
+                    
+                    <% } %>
+                </section>
+            </section>
+            <%- include("partials/footer.ejs") %>
+        </main>
+        
+    </body>
+</html>
+
